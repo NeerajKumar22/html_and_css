@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+/* 
+============
+Main css
+============
+ */
+
+/* 
+============
+header
+============
+ */
+.navi{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	position: fixed;
+	padding: 20px 40px 20px 20px;
+	text-align: left;
+	left: 0;
+	right: 0;
+}
+.navi > * {
+	display: inline;
+}
+
+span{
+	font-size: 20px;
+}
+
+.navi a {
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+
+.container{
+	display: grid;
+	grid-template-rows: 600px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.home-img {
+	background: url(./../media/home-img.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.row1right{
+	background-color: #f8e3d5;
+	text-align: left;
+	padding: 200px 20px 20px 20px;
+
+}
+
+h1{
+	font-size: 30px;
+	padding: 10px;
+}
+
+p{
+	font-size:15px;
+	padding: 20px;
+
+}
+.button1{
+	border-radius: 25px;
+	border:3px solid black;
+	margin: 20px 0 20px 0;
+	padding: 10px;
+}
+/* 
+============
+row 2
+============
+ */
+.row2{
+	display: grid;
+	grid-template-rows: 300px;
+	grid-template-columns:2fr 1fr 1fr;
+}
+.row2left{
+	text-align: left;
+	padding: 20px;
+}
+
+h2{
+	font-size: 30px;
+	padding: 10px
+}
+.about-img{
+	background: url(./../media/about-img.jpg);
+	background-position: center;
+	background-size: cover;
+	/* max-width: 100%; */
+	/* height: auto; */
+}
+.row2right{
+	background-color: #ecaf4e;
+}
+.statusline{
+	width: 80%;
+	border: 1px solid black;
+}
+
+/* 
+===========
+row 3
+===========
+ */
+.row3{
+	display: grid;
+	grid-template-rows: 300px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+h3{
+	font-size: 20px;
+	padding: 10px;
+}
+.row3left{
+	background-color: #ecaf4e
+}
+.row3centerleft{
+	background-color:#ef663b;
+}
+.row3centerright{
+	background-color: black;
+	color: white;
+}
+.row3right{
+	background-color: white;
+}
+/* 
+=============
+row 4
+=============
+ */
+
+.row4{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+ }
+.experience-img{
+	background: url(./../media/experience-img.jpg);
+	background-position: left;
+	background-size: cover;
+}
+.row4right{
+	background-color: #ef663b;
+	color: white;
+}
+.timecolorrow4{
+	color: #b8402a;
+}
+/* 
+============
+row 5
+============
+ */
+
+.row5{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.row5left{
+	background-color: #ecaf4e;
+	color: white;
+}
+.education-img{
+	background: url(./../media/education-img.jpg);
+	background-position: right;
+	background-size: cover;
+}
+.timecolorrow5{
+	color: #9e7c00;
+}
+/* 
+=========
+row 6
+=========
+ */
+
+.row6{
+	display: grid;
+	grid-template-rows: 600px;
+	grid-template-columns: 2fr 1fr 1fr;
+	background-color: #ef663b;
+} 
+h5{
+	font-size: 15px;
+}
+.row6left{
+	background-color: #ef663b;
+	color: white;
+	padding: 20px;
+}
+
+input, textarea{
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 20px;
+	background-color:#ef663b ;
+	width: 600px;
+}
+textarea {
+	height: 100px;
+}
+.button2{
+	border-radius: 25px;
+	margin: 20px 0 20px 0;
+	padding: 10px 40px 10px 40px;
+
+}
+.contact-img{
+	background: url(./../media/contact-img.jpg);
+	background-position:center;
+	background-size: cover;
+	/* max-width: 100%; */
+	/* height:auto; */
+}
+.row6right{
+	background-color: black;
+	color: white;
+}
+
+/* 
+===========
+row 7
+===========
+ */
+.row7{
+	display: grid;
+	grid-template-rows: 400px;
+	background-color: #ef663b;
+}
+iframe{
+	width: 1200px;
+	height: 200px;
+	margin: 30px;
+	padding: 10px 170px 10px 170px;
+}
+
+/* 
+============
+Footer
+============
+*/
+footer{
+	/* display: grid; */
+	grid-template-rows: 200px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 50px;
+}
+small{
+	font-size: 15px;
+	text-align: center;
+	padding: 20px;
+}
+
+.fab{
+	font-size: 20px;	
+}
+/* 
+=============
+icone tag
+=============
+ */
+
+i{
+	display: inline-block;
+	font-size: 30px;
+	padding: 20px;
+}
+/* 
+==================
+Media Queries
+==================
+ */
